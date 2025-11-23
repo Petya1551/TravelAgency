@@ -153,6 +153,26 @@ namespace TravelAgency.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RegisterFormImage {
+            get {
+                object obj = ResourceManager.GetObject("RegisterFormImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RegisterFormImage1 {
+            get {
+                object obj = ResourceManager.GetObject("RegisterFormImage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap travelAgencyLogo {
             get {
                 object obj = ResourceManager.GetObject("travelAgencyLogo", resourceCulture);
