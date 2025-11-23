@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             headerPanel = new Panel();
+            themeBtn = new Button();
+            queriesBtn = new Button();
             logoPictureBox = new PictureBox();
             logoTextLabel = new Label();
             menuPanel = new Panel();
+            registerBtn = new Button();
+            accountBtn = new Button();
             deleteOrderBtn = new Button();
             updateOrderBtn = new Button();
             deleteTourBtn = new Button();
             updateTourBtn = new Button();
-            accountBtn = new Button();
-            registerBtn = new Button();
             addTour = new Button();
             newOrderBtn = new Button();
             excursionBtn = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            backgroundTimer = new System.Windows.Forms.Timer(components);
             headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)logoPictureBox).BeginInit();
             menuPanel.SuspendLayout();
@@ -53,12 +57,43 @@
             // headerPanel
             // 
             headerPanel.BackColor = Color.MidnightBlue;
+            headerPanel.Controls.Add(themeBtn);
+            headerPanel.Controls.Add(queriesBtn);
             headerPanel.Controls.Add(logoPictureBox);
             headerPanel.Controls.Add(logoTextLabel);
             headerPanel.Location = new Point(0, 0);
             headerPanel.Name = "headerPanel";
-            headerPanel.Size = new Size(983, 83);
+            headerPanel.Size = new Size(884, 83);
             headerPanel.TabIndex = 0;
+            // 
+            // themeBtn
+            // 
+            themeBtn.BackColor = Color.MidnightBlue;
+            themeBtn.Cursor = Cursors.Hand;
+            themeBtn.FlatStyle = FlatStyle.Flat;
+            themeBtn.Font = new Font("Verdana", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            themeBtn.ForeColor = Color.AliceBlue;
+            themeBtn.Location = new Point(841, -10);
+            themeBtn.Name = "themeBtn";
+            themeBtn.Size = new Size(46, 105);
+            themeBtn.TabIndex = 7;
+            themeBtn.Text = "☾";
+            themeBtn.UseVisualStyleBackColor = false;
+            themeBtn.Click += themeBtn_Click;
+            // 
+            // queriesBtn
+            // 
+            queriesBtn.BackColor = Color.MidnightBlue;
+            queriesBtn.Cursor = Cursors.Hand;
+            queriesBtn.FlatStyle = FlatStyle.Flat;
+            queriesBtn.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            queriesBtn.ForeColor = Color.AliceBlue;
+            queriesBtn.Location = new Point(685, -13);
+            queriesBtn.Name = "queriesBtn";
+            queriesBtn.Size = new Size(158, 108);
+            queriesBtn.TabIndex = 6;
+            queriesBtn.Text = "Queries";
+            queriesBtn.UseVisualStyleBackColor = false;
             // 
             // logoPictureBox
             // 
@@ -84,12 +119,12 @@
             // menuPanel
             // 
             menuPanel.BackColor = Color.Navy;
+            menuPanel.Controls.Add(registerBtn);
+            menuPanel.Controls.Add(accountBtn);
             menuPanel.Controls.Add(deleteOrderBtn);
             menuPanel.Controls.Add(updateOrderBtn);
             menuPanel.Controls.Add(deleteTourBtn);
             menuPanel.Controls.Add(updateTourBtn);
-            menuPanel.Controls.Add(accountBtn);
-            menuPanel.Controls.Add(registerBtn);
             menuPanel.Controls.Add(addTour);
             menuPanel.Controls.Add(newOrderBtn);
             menuPanel.Controls.Add(excursionBtn);
@@ -98,6 +133,34 @@
             menuPanel.Name = "menuPanel";
             menuPanel.Size = new Size(188, 504);
             menuPanel.TabIndex = 1;
+            // 
+            // registerBtn
+            // 
+            registerBtn.BackColor = Color.MidnightBlue;
+            registerBtn.Cursor = Cursors.Hand;
+            registerBtn.FlatStyle = FlatStyle.Flat;
+            registerBtn.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            registerBtn.ForeColor = Color.AliceBlue;
+            registerBtn.Location = new Point(-5, 9);
+            registerBtn.Name = "registerBtn";
+            registerBtn.Size = new Size(199, 56);
+            registerBtn.TabIndex = 6;
+            registerBtn.Text = "Register";
+            registerBtn.UseVisualStyleBackColor = false;
+            // 
+            // accountBtn
+            // 
+            accountBtn.BackColor = Color.MidnightBlue;
+            accountBtn.Cursor = Cursors.Hand;
+            accountBtn.FlatStyle = FlatStyle.Flat;
+            accountBtn.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            accountBtn.ForeColor = Color.AliceBlue;
+            accountBtn.Location = new Point(-5, 64);
+            accountBtn.Name = "accountBtn";
+            accountBtn.Size = new Size(199, 56);
+            accountBtn.TabIndex = 7;
+            accountBtn.Text = "Account";
+            accountBtn.UseVisualStyleBackColor = false;
             // 
             // deleteOrderBtn
             // 
@@ -155,34 +218,6 @@
             updateTourBtn.Text = "Update Tour";
             updateTourBtn.UseVisualStyleBackColor = false;
             // 
-            // accountBtn
-            // 
-            accountBtn.BackColor = Color.MidnightBlue;
-            accountBtn.Cursor = Cursors.Hand;
-            accountBtn.FlatStyle = FlatStyle.Flat;
-            accountBtn.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            accountBtn.ForeColor = Color.AliceBlue;
-            accountBtn.Location = new Point(-5, 62);
-            accountBtn.Name = "accountBtn";
-            accountBtn.Size = new Size(199, 56);
-            accountBtn.TabIndex = 7;
-            accountBtn.Text = "Account";
-            accountBtn.UseVisualStyleBackColor = false;
-            // 
-            // registerBtn
-            // 
-            registerBtn.BackColor = Color.MidnightBlue;
-            registerBtn.Cursor = Cursors.Hand;
-            registerBtn.FlatStyle = FlatStyle.Flat;
-            registerBtn.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            registerBtn.ForeColor = Color.AliceBlue;
-            registerBtn.Location = new Point(-5, 7);
-            registerBtn.Name = "registerBtn";
-            registerBtn.Size = new Size(199, 56);
-            registerBtn.TabIndex = 6;
-            registerBtn.Text = "Register";
-            registerBtn.UseVisualStyleBackColor = false;
-            // 
             // addTour
             // 
             addTour.BackColor = Color.MidnightBlue;
@@ -218,7 +253,7 @@
             excursionBtn.FlatStyle = FlatStyle.Flat;
             excursionBtn.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             excursionBtn.ForeColor = Color.AliceBlue;
-            excursionBtn.Location = new Point(-3, 117);
+            excursionBtn.Location = new Point(-3, 118);
             excursionBtn.Name = "excursionBtn";
             excursionBtn.Size = new Size(197, 56);
             excursionBtn.TabIndex = 2;
@@ -230,28 +265,37 @@
             panel1.BackColor = Color.AliceBlue;
             panel1.Location = new Point(0, 83);
             panel1.Name = "panel1";
-            panel1.Size = new Size(188, 13);
+            panel1.Size = new Size(884, 18);
             panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = Properties.Resources.image7;
             pictureBox1.Location = new Point(188, 83);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(696, 509);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // backgroundTimer
+            // 
+            backgroundTimer.Interval = 5000;
+            backgroundTimer.Tick += backgroundTimer_Tick;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(884, 591);
-            Controls.Add(pictureBox1);
             Controls.Add(panel1);
+            Controls.Add(pictureBox1);
             Controls.Add(menuPanel);
             Controls.Add(headerPanel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "MainMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Travel Agency";
             Load += MainMenu_Load;
             headerPanel.ResumeLayout(false);
@@ -279,5 +323,8 @@
         private Label logoTextLabel;
         private PictureBox pictureBox1;
         private PictureBox logoPictureBox;
+        private Button queriesBtn;
+        private Button themeBtn;
+        private System.Windows.Forms.Timer backgroundTimer;
     }
 }
