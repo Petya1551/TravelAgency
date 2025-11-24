@@ -232,6 +232,7 @@
             addTour.TabIndex = 5;
             addTour.Text = "Add Tour";
             addTour.UseVisualStyleBackColor = false;
+            addTour.Click += addTour_Click;
             // 
             // newOrderBtn
             // 

@@ -89,5 +89,12 @@ namespace TravelAgency
             registerForm.Visible = true;
             this.Visible = false;
         }
+
+        private void addTour_Click(object sender, EventArgs e)
+        {
+            AddTour addTour = new AddTour();    
+            addTour.Visible = true;
+            this.Visible = false;
+        }
     }
 }
