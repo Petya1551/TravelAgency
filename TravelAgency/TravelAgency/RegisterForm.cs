@@ -78,24 +78,6 @@ namespace TravelAgency
             }
         }
 
-        private void birthdateTextBox_Enter(object sender, EventArgs e)
-        {
-            if (birthdateTextBox.Text == "MM/DD/YYYY")
-            {
-                birthdateTextBox.Text = "";
-                birthdateTextBox.ForeColor = Color.Black;
-            }
-        }
-
-        private void birthdateTextBox_Leave(object sender, EventArgs e)
-        {
-            if (birthdateTextBox.Text == "")
-            {
-                birthdateTextBox.Text = "MM/DD/YYYY";
-                birthdateTextBox.ForeColor = Color.Gray;
-            }
-        }
-
         private void egnTextBox_Enter(object sender, EventArgs e)
         {
             if (egnTextBox.Text == "1234567890")
@@ -112,6 +94,46 @@ namespace TravelAgency
                 egnTextBox.Text = "1234567890";
                 egnTextBox.ForeColor = Color.Gray;
             }
+        }
+
+        private void RegisterForm_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void insuranceNumberTextBox_Enter(object sender, EventArgs e)
+        {
+            if (insuranceNumberTextBox.Text == "1234567890")
+            {
+                insuranceNumberTextBox.Text = "";
+                insuranceNumberTextBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void insuranceNumberTextBox_Leave(object sender, EventArgs e)
+        {
+            if (insuranceNumberTextBox.Text == "")
+            {
+                insuranceNumberTextBox.Text = "1234567890";
+                insuranceNumberTextBox.ForeColor = Color.Gray;
+            }
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Visible = true;
+            this.Visible = false;
+        }
+
+        private void insuranceNumberTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CountryLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

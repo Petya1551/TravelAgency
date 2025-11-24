@@ -16,3 +16,4 @@ C:\Users\HP ZBook 15 G7\source\repos\TravelAgency\TravelAgency\obj\Debug\net8.0-
 C:\Users\HP ZBook 15 G7\source\repos\TravelAgency\TravelAgency\obj\Debug\net8.0-windows\ref\TravelAgency.dll
 C:\Users\HP ZBook 15 G7\source\repos\TravelAgency\TravelAgency\obj\Debug\net8.0-windows\TravelAgency.Properties.Resources.resources
 C:\Users\HP ZBook 15 G7\source\repos\TravelAgency\TravelAgency\obj\Debug\net8.0-windows\TravelAgency.RegisterForm.resources
+C:\Users\HP ZBook 15 G7\source\repos\TravelAgency\TravelAgency\obj\Debug\net8.0-windows\TravelAgency.AddTour.resources
